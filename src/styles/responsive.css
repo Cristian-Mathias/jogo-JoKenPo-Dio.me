@@ -1,0 +1,130 @@
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        height: auto;
+        width: 100%;
+    }
+
+    .container__left {
+        width: 0%;
+        padding: 20px;
+    }
+
+    .container__right {
+        width: 100%;
+    }
+
+    .score_box, .avatar, .card_details {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-moldura {
+        position: static; 
+        width: 100%; 
+        height: auto; 
+    }
+
+    .bg-moldura::after {
+        height: auto; 
+        width: 100%; 
+        top: auto; 
+        left: auto; 
+    }
+
+    .container {
+         flex-direction: column;
+         height: auto;
+         width: 100%;
+       
+     }
+ 
+     .container__left{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+     }
+
+     .score_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width:60px;
+        height:100px;
+     }
+
+     .score-span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:80px;
+        height:50px;
+        font-size: 10px;
+        padding: 5px;
+     }
+
+     .button-mute{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width:40px ;
+        height:50px ;
+     }
+
+     .button-mute, button{
+        padding: 0px;
+     }
+     
+     .avatar{
+        width:60px ;
+        height:100px ;
+     }
+     .avatar-img img{
+        width:80px ;
+        height:80px ;
+     }
+
+     .card_details{
+        width:80px ;
+        height:100px ;
+      
+     }
+
+     .details-info{
+        font-size:10px;
+        padding: 10px;
+     }
+
+     .container__right {
+        width: 100%;
+    }
+ 
+     .score_box, .avatar, .card_details {
+         width: 80%;
+         padding: 0px;
+     }
+
+     .container__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 110px;
+       
+     }
+    
+     .card-box__container{
+        height: 100px;
+        padding: 0px;
+        gap:10px;
+     }
+   
+}

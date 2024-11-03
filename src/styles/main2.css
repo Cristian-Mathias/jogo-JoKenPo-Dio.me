@@ -1,0 +1,192 @@
+/* Configuração do cursor */
+body {
+    cursor: url("../assets/cursor/tes-cursor.png"), default;
+}
+
+button, a, i, img:hover, button:hover, a:hover {
+    cursor: url("../assets/cursor/tes-cursor.png"), auto;
+}
+
+/* Estilo de fundo com moldura */
+.bg-moldura {
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-moldura::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 30%, rgb(0, 0, 0) 100%);
+}
+
+.moldura {
+    padding: 40px;
+}
+
+/* Estilo do contêiner principal */
+.container {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    height: 100vh;
+    background-color: #fbe2e22a;
+}
+
+.container__left {
+    width: 35%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid #31d860c8;
+    background-color: #f1035f;
+    padding: 30px;
+}
+
+.container__right {
+    width: 65%;
+    padding: 0px;
+}
+
+/* Elementos de pontuação e avatar */
+.score_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 410px;
+    background-color: #074ba5;
+    padding: 30px;
+}
+
+.score-span {
+    color: #ffff;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 410px;
+    height: 300px;
+    background-color: #074ba5;
+    border: 3px solid #31d860c8;
+}
+
+.avatar-img img {
+    width: 177px;
+    height: 233px;
+}
+
+.frame {
+    border: 3px solid #31d860c8;
+}
+
+/* Detalhes do cartão */
+.card_details {
+    background-color: #074ba5;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 9rem;
+    width: 100%;
+    padding: 30px;
+}
+
+#card-name {
+    font-size: 0.8rem;
+}
+
+#card-type {
+    font-size: 1rem;
+}
+
+/* Contêiner de cartas */
+.card-box__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0.4rem;
+}
+
+.card-versus__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.1rem;
+    height: 300px;
+}
+
+.versus {
+    width: 130px;
+    height: 160px;
+    padding: 10px;
+}
+
+.versus-top, .versus-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.versus-bottom {
+    width: 110px;
+    height: 40px;
+    margin-top: 1rem;
+}
+
+/* Botão do lado direito */
+.botton-container__right {
+    color: #ffff;
+    font-size: 18px;
+    width: 110px;
+    height: 40px;
+    border: 3px solid #31d860c8;
+    background-color: #9b00f2;
+}
+
+/* Box do card */
+.card-box {
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid #31d860c8;
+    background-color: #f5ae0a;
+}
+
+.card-box img {
+    border: 3px solid #31d860c8;
+}
+
+.card-infield {
+    height: 185px;
+    width: 130px;
+    border: 3px solid #31d860c8;
+    background-color: #f1035f;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+

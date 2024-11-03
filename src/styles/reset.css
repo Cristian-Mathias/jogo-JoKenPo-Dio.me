@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Silkscreen", serif,monospace;
+  user-select: none;
+}

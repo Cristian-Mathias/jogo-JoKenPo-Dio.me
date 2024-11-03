@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/src/assets/favicon/favicon2.png" type="image/x-icon">
+    <!-- main styles -->
+    <link rel="stylesheet" href="./src/styles/main2.css">
+    <!-- reset css -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <!-- responsive css -->
+     <link rel="stylesheet" href="./src/styles/responsive.css">
+    <!-- fonts Silkscreen -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Jogo de Cartas JoKenPo!</title>
+</head>
+
+<body>
+    <audio id="bgm" loop>
+        <source src="./src/assets/audios/musical background-edit.mp4" type="audio/mp4" />
+    </audio>
+
+    <div class="bg-moldura">
+    </div>
+    <!--  -->
+        <div class="container">
+            <div class="container__left ">
+                <div class="score_box frame">
+                    <div class="score-span">
+                        <span id="score_points">Win: 0 | Lose: 0</span>
+                    </div>
+                    <div class="button-mute">
+                        <button id="muteButton" style="background: none; border: none; cursor: pointer;">
+                            <i class="fas fa-volume-mute" style="font-size: 24px; color: #fff; width: 60px;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <div class="avatar-img">
+                        <img id="card-image" src="./src/assets/icons/avatar.png">
+                    </div>
+                </div>
+                <div class="card_details frame">
+                    <p class="details-info" id="card-name">SELECIONE</p>
+                    <p class="details-info"id="card-type">uma carta</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="container__right">
+                <div class="card-box__container">
+                    <div class="card-box" id="computer-cards"></div>
+                    <div class="card-versus__container">
+                        <div class="versus-top">
+                            <div class="card-infield">
+                                <img id="player-field-card" height="180px" width="125px">
+                            </div>
+
+                            <img class="versus" src="./src/assets/icons/vs1.png">
+
+                            <div class="card-infield">
+                                <img id="computer-field-card" height="180px" width="125px">
+                            </div>
+                        </div>
+                        <div class="versus-bottom">
+                            <button id="next-duel" class="botton-container__right" onclick="resetDuel()">JokenPo</button>
+                        </div>
+                    </div>
+                    <div class="card-box" id="player-cards"></div>
+                </div>
+            </div>
+        </div>
+    <!-- import script -->
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+
+</html>
